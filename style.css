@@ -1,0 +1,205 @@
+body {
+  font-family: arial;
+  font-size: small;
+  margin: 0;
+  
+}
+
+.container {
+  display:grid;
+  grid-template-areas: 
+    "header "
+    "main "
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 2fr 2fr;
+  align-items: center;
+  
+  justify-items: stretch;
+   position: relative;
+    grid-gap: 30px;
+
+}
+
+header {
+  grid-area: header;
+  align-items: center;
+  float:right;
+  grid-row: span 1/1;
+ 
+}
+
+
+main {
+  grid-area: main;
+  align-self:center;
+  grid-row: 2/span 5;
+  justify-content: center;
+  
+}
+
+
+input {
+  align-self:center;
+   margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  display: block;
+  width: 30%;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  background-image: url("https://png2.cleanpng.com/sh/642a0cabf0f0a4ec5d73f0cae2e03c6d/L0KzQYm3VsA4N6luipH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6Tflkd58yfNd8aXfxPbj2jBdtbV54fdN7Y3iwfrb8lQJidF5redVuLUXlQYrsVfM6apM8fak5LkS2Q4eBU8g0OWY3UKY7M0i7QYi9WL5xdpg=/kisspng-computer-icons-icon-design-google-search-neutral-face-5b19e5c9bb7e70.433683831528423881768.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: left;
+  
+  
+}
+
+input:hover {
+ border: 1px solid black; 
+}
+
+button.sign {
+  background-color: #4285f4;
+  text-align: center;
+  display: inline;
+  color: white;
+  border: 1px solid #4285f4;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.search {
+ font-size: 13px;
+ cursor: pointer;
+ border: 1px solid #F2F2F2;
+ border-radius: 5px;
+ text-align: center; 
+ padding: 10px 10px;
+ margin: 30px 6px;
+ background-color: #F2F2F2;
+ color: #5F6368;
+}
+
+.center {
+ margin: 0 auto;
+ display: flex;
+ justify-content: center;
+}
+
+button.search:hover {
+color: black;
+}
+
+p.sign {
+  padding: 0px 5px 0px 5px;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding-right: 30px;
+  align-items: center;
+
+  
+}
+
+header li {
+  display: inline;
+  float:right;
+  padding: 15px 0px 0px 0px;
+  text-align:center; 
+  align-self: center;
+
+}
+
+header li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: rgba(0,0,0,0.87);
+}
+
+header li a:hover {
+  color: red;
+}
+
+#apps{
+  align:center; 
+  margin: 5px 0px;
+  padding: 3px 15px 0px 5px;
+
+ 
+}
+
+img.logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width=100%;
+  height=auto;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #F2F2F2;
+  grid-row: last-line;
+  align-content: end;	
+  position: fixed;
+    bottom: 0;
+    width: 100%;
+  
+  
+ 
+}
+
+footer li {
+  display: inline;
+  float:left;
+  padding: 10px 0px 10px 0px;
+  text-align:center; 
+  margin: 5px 10px; 
+  color: #5F6368;
+   
+}
+
+footer li.right{
+ float:right; 
+}
+
+.destination {
+  display:block;
+  border-style:solid;
+  border-color: hsla(197, 9%, 65%, 1);
+  border-width:1px;
+  padding: 0.75%;
+  color: #5F6368;
+  font-size: 14px;
+  
+   
+   
+}
+
+footer ul {
+ display:block;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding-left: 5px;
+  align-items: center;
+  border-style:solid;
+  border-color: hsla(197, 9%, 65%, 1);
+  border-width:0px 1px 1px 1px;
+   
+  
+  
+  
+}
